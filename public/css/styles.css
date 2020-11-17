@@ -35,11 +35,10 @@ body{
 
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  
 }
 
 nav {
-  background-color: var(--danger);
+  background-color: var(--primary);
   padding: 10px;
 }
 
@@ -52,7 +51,6 @@ nav {
   font-weight: bold;
   color: var(--gray-dark);
 }
-
 
 /* .nav-item a::after {
   content: '';
@@ -69,15 +67,18 @@ nav {
   width: 100%;
   transition: width;
 } */
-
+p{
+   all: unset; 
+}
 .card{
     /* all: unset; */
+    background-color: var(--primary);
     border: none;
     margin-top: 50px;
-    box-shadow: 0px 10px 50px 20px rgba(0, 0, 0, 0.2);
     animation-name: up;
     animation-duration: 200ms;
     animation-fill-mode: forwards;
+    color: var(--light)
 }
 
 @keyframes up {
@@ -88,4 +89,78 @@ nav {
   to{
     opacity: 1;
   }
+}
+
+.card-img{
+  border: none;
+  box-shadow: -5px 5px 10px 0px rgba(0, 0, 0, 0.6); 
+}
+
+.item{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 16px;
+}
+
+.item:last-child{
+  border: none;
+}
+
+h5{
+  color: var(--gray-dark);
+  font-size: 11px;
+  font-weight: 600;
+}
+h4{
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+p, span{
+  font-size: 14px;
+  color: black;
+  font-weight: 500;
+}
+
+.item span{
+  background-color: var(--light);
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: var(--secondary);
+
+  font-size: 12px;
+}
+
+.teste{
+  color: red;
+}
+
+.form-control{
+  border: none;
+  font-size: 12px;
+}
+
+.form-control-sm{
+  border-radius: none;
+  border: none;
+}
+
+.card-create{
+  /* all: unset; */
+  background-color: var(--primary);
+  border: none;
+  margin-top: 50px;
+  animation-name: up;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+  color: var(--light)
+}
+
+.item-create{
+  padding: 16px;
+}
+
+input{
+  font-size: 10px;
 }

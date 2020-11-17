@@ -1,0 +1,80 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+<form method="POST" action="/instructors">
+  <div class="card-create mx-auto" style="max-width: 840px">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="https://source.unsplash.com/collection/373039/500x700" class="card-img" alt="...">
+      </div>
+      <div class="col-md-6">
+        <div class="card-body">
+
+          <div class="item-create">
+            <h4 class="card-title">Detalhes</h4>
+            <h5>Avatar URL</h5>
+            <input 
+              class="form-control form-control-sm" 
+              type="url" 
+              placeholder="URL" 
+              name="avatar_url">
+          </div>
+
+          <div class="item-create">
+            <h5>Nome do instrutor</h5>
+            <input 
+              class="form-control form-control-sm" 
+              type="text" 
+              placeholder="Nome do Instrutor" 
+              name="name">
+          </div>
+
+          <div class="item-create">
+            <h5>Data de nascimento</h5>
+            <div>
+              <input 
+                class="form-control form-control-sm" 
+                type="date" 
+                name="birth">
+            </div>
+          </div>
+
+          <div class="item-create"> 
+             <h5>Sexo</h5>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input 
+                    type="radio" 
+                    value="M"
+                    checked="checked"
+                    class="form-check-input" 
+                    name="gender">Masculino
+                </label>
+              </div>
+
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input 
+                  type="radio" 
+                  value="F"
+                  class="form-check-input" 
+                  name="gender">Feminino
+              </label>
+            </div>
+          </div>
+
+          <div class="item-create">
+            <h5>Area de atuação</h5>
+              <input 
+                class="form-control form-control-sm" 
+                type="text" 
+                placeholder="Separe os serviços prestados por vírgula"
+                name="services">
+          </div>
+          <button type="submit" class="btn btn-success">Salvar</button>
+        </div>
+      </div>
+   </div>
+  </div>
+  </form>
+{% endblock content %}
