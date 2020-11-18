@@ -1,0 +1,22 @@
+{
+  "instructors": [
+    {
+      "avatar_url": "https://filewarez.tv/attachments/5/2/9/1/7/14486.attach",
+      "name": "Ana Lopes",
+      "birth": 1604620800000,
+      "gender": "M",
+      "services": "lutadora",
+      "created_at": "20:13:28",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://filewarez.tv/attachments/5/2/9/1/7/14486.attach",
+      "name": "Ana Lopes",
+      "birth": 1604620800000,
+      "created_at": "20:21:01",
+      "gender": "M",
+      "services": "lutadora"
+    }
+  ]
+}
