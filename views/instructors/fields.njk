@@ -1,0 +1,78 @@
+
+        <div class="card-body">
+          <div class="item-create">
+            <h4 class="card-title">Detalhes</h4>
+            <h5>Avatar URL</h5>
+            <input 
+              class="form-control form-control-sm" 
+              type="url" 
+              placeholder="URL" 
+              name="avatar_url"
+              value="{{instructor.avatar_url}}"
+              >
+          </div>
+
+          <div class="item-create">
+            <h5>Nome do instrutor</h5>
+            <input 
+              class="form-control form-control-sm" 
+              type="text" 
+              placeholder="Nome do Instrutor" 
+              name="name"
+              value="{{instructor.name}}">
+          </div>
+
+          <div class="item-create">
+            <h5>Data de nascimento</h5>
+            <div>
+              <input 
+                class="form-control form-control-sm" 
+                type="date" 
+                name="birth"
+                value="{{instructor.birth}}">
+            </div>
+          </div>
+
+          <div class="item-create"> 
+             <h5>Sexo</h5>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input 
+                    type="radio" 
+                    class="form-check-input" 
+                    name="gender"
+                    value="M"  
+                    {% if instructor.gender == 'M' %}
+                      checked
+                    {% endif %}
+                    >Masculino
+                </label>
+              </div>
+
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input 
+                  type="radio" 
+                  class="form-check-input" 
+                  name="gender"
+                  value="F"
+                    {% if instructor.gender == 'F' %}
+                      checked
+                    {% endif %}
+                  >Feminino
+              </label>
+            </div>
+          </div>
+
+          <div class="item-create">
+            <h5>Area de atuação</h5>
+              <input 
+                class="form-control form-control-sm" 
+                type="text" 
+                placeholder="Separe os serviços prestados por vírgula"
+                name="services"
+                value="{{instructor.services}}">
+          </div>
+          <button type="submit" class="btn btn-success">Salvar</button>
+        </div>
+     
